@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Website</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="controls">
+            <label for="yearSlider">Year: <span id="yearLabel">2009</span></label>
+            <input type="range" id="yearSlider" min="2009" max="2021" value="2009" step="2">
+        </div>
+        <svg id="canvas">
+            <text id="title" x="350" y="30">French Departments</text>
+        </svg>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.skypack.dev/d3-geo-projection@4"></script>
+    <script defer src="main.js"></script>
+</html>
+
